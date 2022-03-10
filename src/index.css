@@ -8,16 +8,18 @@ body {
   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main{
+  padding: 6px;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .header{
   display: flex;
   align-items: center;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,29,64,1) 5%, rgba(59,57,92,1) 10%);
-  height: 85px;
+  height: 65px;
   color: white;
   padding: 20px;
 }
@@ -35,5 +37,77 @@ code {
 .header--project{
   font-size: 12px;
   font-weight: 500;
+  /* text-align: center; */
+}
+
+
+
+.form {
+  display: grid;
+  grid-template: 40 px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #1f1d40;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,29,64,1) 5%, rgba(59,57,92,1) 10%);
+  color: white;
+  border: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
